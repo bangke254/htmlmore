@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>forms</title>
+    <style>
+        input{
+            width: 150px;
+            border-width: 4px;
+        }
+        button
+        {
+            background-color: black;
+            color: red;
+            text-align: center;
+            border-radius: 10px;
+            border: none;
+        }
+        button:hover
+        {
+            background-color: chartreuse;
+        }
+        fieldset
+        {
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+<h1 style="text-align: center">Guess who was introduced</h1> <br>
+<fieldset style="width: 50%">
+    <legend style="text-align: center; font-size: larger">Everything u need</legend>
+    <form action="">
+    <label for="name">Name: </label> <br>
+    <input type="text" id="name" required placeholder="Joseph"> <br><br>
+    <label for="mail">Email: </label> <br>
+    <input type="email" id="mail" placeholder="Joseph@gmail.com" required> <br><br>
+    <label for="pass">Password: </label> <br>
+    <input type="password" required id="pass"> <br><br>
+
+    <p>Choose a course: <br></p>
+    <input type="checkbox" name="bbit" id="BBIT">
+    <label for="BBIT">BBIT </label> <br>
+    <input type="checkbox" name="cs" id="cs">
+    <label for="cs">Computer science</label> <br><br>
+
+    <label for="courses"> choose a course: </label> <br>
+ <select name="courses" id="courses" > <!--    size='3' multiple-->
+        <option value="engineer">Engineer</option>
+        <option value="nurse">Nurse</option>
+        <option value="it" selected>Technology</option>
+
+    </select> <br><br>
+    <textarea name="detail" cols="30" rows="10">This is contained in thetext area</textarea> <br><br>
+    <button>submit</button>
+<!--    <input type="submit" value="SUbmit">-->
+
+
+</form>
+</fieldset>
+</body>
+</html>
